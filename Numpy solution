@@ -1,0 +1,27 @@
+import time as t
+
+numpyoperation = np.arange(60000)
+list1=range(60000)
+initialTime = t.time()
+resultantlist=[]
+for i in list1:   
+    resultantlist=((i+1)**2+8)/(i+1)
+    
+print("Time taken by Lists to perform operation:", 
+      (t.time() - initialTime),
+      "seconds") 
+
+intialTimeNumpy=t.time()
+
+resultantnumpy=np.empty(1)
+for j in numpyoperation:   
+    intialTimeNumpy=((i+1)**2+8)/(i+1)
+
+        
+print("Time taken by Numpy array to perform operation:", 
+      (t.time() - intialTimeNumpy),
+      "seconds") 
+      
+      
+     
+
